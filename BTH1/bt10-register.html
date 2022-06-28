@@ -26,5 +26,71 @@
         </div>
 
         <h2 style="text-align: center;">ĐĂNG KÍ THAM GIA DIỄN ĐÀN</h2>
+        <form action="" method="post">
+            <table border="1" style="background-color: yellow; width: 40%;" align="center">
+                <tr>
+                    <td><label for="Uname">Tên đăng nhập</label></td>
+                    <td><input type="text" id="Uname" name="tendn" placeholder="Nhập tên đăng nhập" required></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="Pass">Mật khẩu</label></td>
+                    <td><input type="password" name="password" id="Pass" required></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="">Giới tính</label></td>
+                    <td>
+                        <input type="radio" name="sex" value="Nam" required>Nam
+                        <input type="radio" name="sex" value="Nữ">Nữ
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td><label for="date">Ngày sinh</label></td>
+                    <td><input type="date" name="" id="date" required></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" required></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="code">Ngôn ngữ lập trình yêu thích nhất</label></td>
+                    <td>
+                        <input type="text" list="favorite" id="code">
+                        <datalist id="favorite" >
+                            <option>C++</option>
+                            <option>C#</option>
+                            <option>PHP</option>
+                            <option>Java</option>
+                            <option>Python</option>
+                        </datalist>
+                    </td>
+                </tr>
+    
+                <tr style="height: 70px" >
+                    <td><label for="rule">Quy định khi tham gia diễn đàn</label></td>
+                    <td style="width:50%;">
+                        <div style="background-color: white; text-align: justify; height: 70px; ">
+                            Bài viết phải nghiêm túc, không chứa quảng cáo, khống có nội dung phản cảm
+                        </div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">
+                            <img src="dangky.png" alt="dangky" width="70px" height="">
+                        </button>
+                        <button type="reset">
+                            <img src="huy.png" alt="huy" width="70px">
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
     </body>
 </html>
